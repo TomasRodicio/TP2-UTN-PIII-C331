@@ -1,0 +1,26 @@
+[
+    {
+        "title":"Interestelar",
+        "directorID": 1,
+        "categorie": "Sci-fi",
+        "status": "active"
+    },
+    {
+        "title":"Batman: el caballero de la noche",
+        "directorID": 1,
+        "categorie": "Action",
+        "status": "inactive"
+    },
+    {
+        "title":"Rescatando al soldado Ryan",
+        "directorID": 2,
+        "categorie": "Action",
+        "status": "inactive"
+    },
+    {
+        "title":"Jurassic Park",
+        "directorID": 2,
+        "categorie": "Adventure",
+        "status": "active"
+    }
+]
