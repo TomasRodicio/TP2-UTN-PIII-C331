@@ -9,3 +9,20 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
 - Dentro del archivo mysql.md estara el comando a ejecutar para crear la base y sus tablas
 - Dentro de src/data/db.js configurar la base de datos
 - Ejecutar el comando: nodemon app.js
+
+## Ejemplos de endpoints
+### 1. Obtener un saludo
+- **Ruta**: `/api/greet`
+- **Método**: `GET`
+- **Descripción**: Devuelve un mensaje de saludo.
+- **Parámetros**: Ninguno
+- **Ejemplo de solicitud**:
+    ```bash
+    GET http://localhost:3000/api/greet
+    ```
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "¡Hola, mundo!"
+    }
+    ```
