@@ -22,5 +22,35 @@
         "directorID": 2,
         "categorie": "Adventure",
         "status": "active"
+    },
+    {
+        "title": "Oppenheimer",
+        "directorID": 1,
+        "categorie": "Biographical",
+        "status": "active"
+    },
+    {
+        "title": "Schindler's List",
+        "directorID": 2,
+        "categorie": "Historical drama",
+        "status":"inactive"
+    },
+    {
+        "title": "Django Unchained",
+        "directorID": 3,
+        "categorie": "Western",
+        "status": "inactive"
+    },
+    {
+        "title": "Once Upon a Time in Hollywood​",
+        "directorID": 3,
+        "categorie": "Comedy-drama",
+        "status": "active" 
+    },
+    {
+        "title": "Inglourious Basterds",
+        "directorID": 3,
+        "categorie": "War",
+        "status": "active"
     }
 ]
