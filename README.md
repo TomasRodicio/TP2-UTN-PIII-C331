@@ -1,9 +1,4 @@
-- **Ejemplo de respuesta**:
-    ```json
-    {
-      "message": "¡Hola, mundo!"
-    }
-    ```
+
 
 # Trabajo Práctico Parte 2 — Node.js Express
 ## Descripción de la API
@@ -24,7 +19,7 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
 - **Descripción**: Devuelve todas las peliculas.
 - **Ejemplo de solicitud**:
     ```bash
-    GET http://localhost:3000/peliculas
+    GET http://localhost:3030/peliculas
     ```
 
 ### 2. Traer pelicula por ID
@@ -33,7 +28,7 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
 - **Descripción**: Devuelve una pelicula por ID.
 - **Ejemplo de solicitud**:
     ```bash
-    GET http://localhost:3000/peliculas/3
+    GET http://localhost:3030/peliculas/3
     ```
 
 ### 3. Crear pelicula
@@ -42,13 +37,38 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
 - **Descripción**: Crea una nueva pelicula.
 - **Ejemplo de solicitud**:
     ```bash
-    POST http://localhost:3000/peliculas
+    POST http://localhost:3030/peliculas
     Content-Type: application/json
     {
         "title":"Interestelar",
         "directorID": 1,
         "categorie": "Sci-fi",
         "status": "active"
+    }
+    ```
+### 4. Actualizar pelicula
+- **Ruta**: `/peliculas/:id`
+- **Método**: `PUT`
+- **Descripción**: Actualizar una pelicula por ID.
+- **Ejemplo de solicitud**:
+    ```bash
+    PUT http://localhost:3030/peliculas/1
+    Content-Type: application/json
+    {
+      "status": "inactive"
+    }
+    ```
+### 5. Borrar pelicula
+- **Ruta**: `/peliculas/:id`
+- **Método**: `DELETE`
+- **Descripción**: Actualizar una pelicula por ID.
+- **Ejemplo de solicitud**:
+    ```bash
+    DELETE http://localhost:3030/peliculas/1
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "Registro borrado correctamente"
     }
     ```
 
