@@ -46,6 +46,12 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
         "status": "active"
     }
     ```
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "Registro creado correctamente"
+    }
+    ```
 ### 4. Actualizar pelicula
 - **Ruta**: `/peliculas/:id`
 - **Método**: `PUT`
@@ -58,10 +64,16 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
       "status": "inactive"
     }
     ```
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "Registro actualizado correctamente"
+    }
+    ```
 ### 5. Borrar pelicula
 - **Ruta**: `/peliculas/:id`
 - **Método**: `DELETE`
-- **Descripción**: Actualizar una pelicula por ID.
+- **Descripción**: Borrar una pelicula por ID.
 - **Ejemplo de solicitud**:
     ```bash
     DELETE http://localhost:3030/peliculas/1
@@ -71,4 +83,51 @@ Tiene la opcion de crear, traer, actualizar y eliminar registros de una base de 
       "message": "Registro borrado correctamente"
     }
     ```
-
+### 6. Crear director
+- **Ruta**: `/directores/`
+- **Método**: `POST`
+- **Descripción**: Crear un nuevo director.
+- **Ejemplo de solicitud**:
+    ```bash
+    POST http://localhost:3030/directores/
+    Content-Type: application/json
+    {
+        "name": "Christopher",
+        "surname": "Nolan"
+    }
+    ```
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "Registro creado correctamente"
+    }
+    ```
+### 7. Traer directores
+- **Ruta**: `/directores/`
+- **Método**: `GET`
+- **Descripción**: Traer todos los directores.
+- **Ejemplo de solicitud**:
+    ```bash
+    GET http://localhost:3030/directores/
+    ```
+### 8. Traer director por ID
+- **Ruta**: `/directores/:id`
+- **Método**: `GET`
+- **Descripción**: Devuelve un director por ID.
+- **Ejemplo de solicitud**:
+    ```bash
+    GET http://localhost:3030/directores/3
+    ```
+### 9. Borrar director
+- **Ruta**: `/directores/:id`
+- **Método**: `DELETE`
+- **Descripción**: Borrar una director por ID.
+- **Ejemplo de solicitud**:
+    ```bash
+    DELETE http://localhost:3030/directores/1
+- **Ejemplo de respuesta**:
+    ```json
+    {
+      "message": "Registro borrado correctamente"
+    }
+    ```
